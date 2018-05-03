@@ -1,0 +1,7 @@
+<form (ngSubmit)="submitTheForm(goalsForm)" #goalsForm="ngForm">
+  <div class="form-group">
+    <label for="textEntry">Input username</label>
+    <textarea class="form-control" name="textEntry" id="textEntry" cols="30" rows="5" #textEntry="ngModel" [(ngModel)]="newEntry.textEntry" placeholder="Entry text here"></textarea>
+  </div>
+  <button class="btn btn-success" type="search">Search</button>
+</form>
